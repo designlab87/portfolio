@@ -1,0 +1,18 @@
+.detail {
+  display:none;
+}
+.detailText{
+  color:var(--light-gray);
+}
+.detailImg{
+  border-radius: 4px;
+  margin:10px;
+}
+.detailBody p {
+    color:var(--light-gray);
+    font-size: 16px;
+}
+
+.detailLink {
+    font-size: 16px;
+}

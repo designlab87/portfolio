@@ -1,0 +1,8 @@
+html {
+  --darkest-color: #1c1b1b;
+  --dark-color: #0a192f;
+  --lighter-color: #007CC7;
+  --lightest-color: #4DA8DA;
+  --light-gray:rgb(218, 218, 218);
+  --bg-color: rgb(0, 5, 26);
+}
