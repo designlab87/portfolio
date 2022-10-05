@@ -19,7 +19,8 @@ Customizing the page is done by:
 2. Create a directory called `Constants` under `src` and move the `Constants.js` file into it.
 3. Create an `assets` directory under `public`, with the following subfolders: img, logos, resume.
 4. Add your images.
-5. Run `npm start`.
+5. Optional: Customize src/variables.css to set your color palette.
+6. Run `npm start`.
 
 ## NPM Infos
 

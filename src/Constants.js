@@ -3,6 +3,8 @@
 export const myname = ""; // Your name
 export const myphone = ""; // Your phone 
 export const myemail = ""; // Your email
+export const headLink = ""; // Path to headshot
+export const gitLink = ""; // Link to your github
 
 // Code data
 export const codeBlock1 = ""; // Optional code to display

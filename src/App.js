@@ -8,6 +8,8 @@ import Detail from './UI/Detail';
 import Code from './UI/Code';
 import Header from './UI/Header';
 import './App.css';
+import { GoMarkGithub } from "react-icons/go";
+import { IconContext } from "react-icons";
 
 import * as Constant from './Constants/Constants';
 
@@ -52,6 +54,11 @@ const App = () => {
           <Header headLink={Constant.headLink}/>
         </Col>
         <Col xl={4}>
+          <IconContext.Provider value={{ className: "gitIcon", size: "2rem" }}>
+            <div><a target="_blank" rel="noreferrer" href={Constant.gitLink}>
+            <GoMarkGithub />
+            </a></div>
+          </IconContext.Provider>
         </Col>
       </Row>
       <Row>
