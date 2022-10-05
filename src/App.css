@@ -15,9 +15,10 @@
 }
 .resumeLinkCol {
   height:35px;
-  padding:7px;
+  padding:4px;
   background-color:var(--darkest-color);
+  text-align: center;
 }
-.resumeLink {
-  margin-top: -4px;
+.resumeLink .card-link {
+  text-align: center;
 }

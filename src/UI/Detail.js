@@ -38,7 +38,7 @@ const Detail = (props) => {
             </Col>
             <Col xl={6}>
               {props.fullbody.map((text, i)=>{
-                return <p key={i+'_detail_text'}>{text}</p>
+                return <div className="detailText" key={i+'_detail_text'} dangerouslySetInnerHTML={{__html: text}} />
               })}
             </Col>
           </Row>

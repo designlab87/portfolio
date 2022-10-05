@@ -38,4 +38,5 @@ pre {
 
 a {
   color: var(--lightest-color);
+  text-decoration: none;
 }

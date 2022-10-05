@@ -34,6 +34,16 @@
   color:var(--light-gray);
 }
 
+.card-subtitle {
+  color:var(--dark-gray);
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--lightest-color);
+}
+
+.card-text {
+  color: var(--dark-gray);
+}
+
 .card-footer, 
 .card-footer:last-child {
   background-color:var(--darkest-color);

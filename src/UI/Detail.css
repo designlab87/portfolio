@@ -4,15 +4,21 @@
 .detailText{
   color:var(--light-gray);
 }
+.detailText h1{
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  font-size: 20px;
+  border-bottom: 1px solid var(--lightest-color);
+  text-transform: uppercase;
+}
 .detailImg{
   border-radius: 4px;
   margin:10px;
 }
 .detailBody p {
-    color:var(--light-gray);
-    font-size: 16px;
+  color:var(--light-gray);
+  font-size: 14px;
 }
 
 .detailLink {
-    font-size: 16px;
+  font-size: 16px;
 }
