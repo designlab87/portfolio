@@ -1,6 +1,6 @@
 # React Dev Portfolio
 
-![alt portfolio](https://designlab87.github.io/portfolio/assets/img/portfolio.jpg)
+![alt portfolio](https://designlab87.github.io/portfolio/assets/img/portfolio.png)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
