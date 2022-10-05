@@ -1,4 +1,6 @@
-# Portfolio React App
+# React Dev Portfolio
+
+![alt portfolio](https://designlab87.github.io/portfolio/assets/img/portfolio.jpg)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -12,7 +14,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Customization
 
-
+Customizing the page is done by:
+1. Enter your information into the `src/Constants.js`. You can see where each `const` is used by looking to `App.js`.
+2. Create a directory called `Constants` under `src` and move the `Constants.js` file into it.
+3. Create an `assets` directory under `public`, with the following subfolders: img, logos, resume.
+4. Add your images.
+5. Run `npm start`.
 
 ## NPM Infos
 

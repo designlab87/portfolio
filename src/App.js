@@ -49,7 +49,7 @@ const App = () => {
           </div>
         </Col>
         <Col xl={4}>
-          <Header/>
+          <Header headLink={Constant.headLink}/>
         </Col>
         <Col xl={4}>
         </Col>
