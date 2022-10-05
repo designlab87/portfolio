@@ -24,3 +24,4 @@ yarn-error.log*
 
 # exclude everything
 /public/assets/*
+/src/Constants/*
