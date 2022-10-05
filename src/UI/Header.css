@@ -1,9 +1,9 @@
 .headImg {
-  height: 150px;
-  width: 150px;
+  height: 100px;
+  width: 100px;
   float: center;
   border-radius: 50%;
-  border:8px solid var(--lighter-color);
+  border:6px solid var(--lighter-color);
   overflow: hidden;
   background-color: var(--darkest-color);
   margin-bottom:20px;

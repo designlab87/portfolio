@@ -7,12 +7,21 @@
 }
 .inventory {
   color:var(--dark-color);
-  font-size: 28px;
+  font-size: 16px;
   text-transform: uppercase;
   margin-bottom: 14px;
   text-align: center;
   text-justify: inter-word;
+  margin-top: 6px;
 }
+
+@media only screen and (min-width: 576px) {
+  .inventory {
+    font-size: 24px;
+    margin-top: 0px;
+  }
+}
+
 .resumeLinkCol {
   height:35px;
   padding:4px;
@@ -21,4 +30,17 @@
 }
 .resumeLink .card-link {
   text-align: center;
+}
+
+.contactInfo {
+  margin-top:14px;
+  margin-bottom:14px;
+}
+
+.contactInfo p {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  margin:0px;
+}
+.contactInfo p a {
+  text-decoration: none;
 }

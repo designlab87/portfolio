@@ -40,6 +40,7 @@ const Detail = (props) => {
               {props.fullbody.map((text, i)=>{
                 return <div className="detailText" key={i+'_detail_text'} dangerouslySetInnerHTML={{__html: text}} />
               })}
+              <Card.Link className="detailLink" target="_blank" rel="noreferrer" href={props.link.link}>{props.link.text}</Card.Link>
             </Col>
           </Row>
         </Card.Body>

@@ -22,7 +22,6 @@ const App = () => {
           title={item.title}
           subtitle={item.subtitle}
           body={item.body}
-          link={item.link}
         />
       </Col>
       <Col id={item.id+'_detail_col'} className="detail animate" xl={12}>
@@ -33,6 +32,7 @@ const App = () => {
           title={item.title}
           subtitle={item.subtitle}
           fullbody={item.fullbody}
+          link={item.link}
         />
       </Col>
     </Fragment>
@@ -41,8 +41,17 @@ const App = () => {
   return (
     <Container>
       <Row>
-        <Col xl={12}>
+        <Col xl={4}>
+          <div className="contactInfo">
+            <p>{Constant.myname}</p>
+            <p><a href={"tel:"+Constant.myphone.replace(/\D/g,'')}>{Constant.myphone}</a></p>
+            <p><a href={"mailto:"+Constant.myemail}>{Constant.myemail}</a></p>
+          </div>
+        </Col>
+        <Col xl={4}>
           <Header/>
+        </Col>
+        <Col xl={4}>
         </Col>
       </Row>
       <Row>
@@ -59,7 +68,7 @@ const App = () => {
             </Col>
             <Col sm={3}>
               <div className="resumeLinkCol">
-                <a className="resumeLink" href={Constant.resumePath}>Resume</a>
+                <a className="resumeLink" target="_blank" rel="noreferrer" href={Constant.resumePath}>Resume</a>
               </div>
             </Col>
           </Row>
