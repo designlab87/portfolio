@@ -7,7 +7,6 @@ import './GridBox.css';
 const GridBox = (props) => {
 
   const detailShowHandler = (id) => {
-    console.log(id);
     const elements = document.getElementsByClassName("grid");
     for (const el of elements){
         el.classList.remove('active');
