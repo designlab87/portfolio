@@ -15,12 +15,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Customization
 
 Customizing the page is done by:
-1. Enter your information into the `src/Constants.js`. You can see where each `const` is used by looking to `App.js`.
-2. Create a directory called `Constants` under `src` and move the `Constants.js` file into it.
-3. Create an `assets` directory under `public`, with the following subfolders: img, logos, resume.
-4. Add your images.
-5. Optional: Customize `src/variables.css` to set your color palette.
-6. Run `npm start`.
+1. Run `npm install`.
+2. Enter your information into the `src/Constants.js`. You can see where each `const` is used by looking to `App.js`.
+3. Create a directory called `Constants` under `src` and move the `Constants.js` file into it.
+4. Create an `assets` directory under `public`, with the following subfolders: img, logos, resume.
+5. Add your images.
+6. Optional: Customize `src/variables.css` to set your color palette.
+7. Run `npm start`!
 
 ## NPM Infos
 

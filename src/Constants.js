@@ -43,3 +43,7 @@ export const gridData = [ // The gridData contains one object for each item in y
     }
   }
 ];
+
+export const chartData = [
+  ['Javascript','Thrilled',1]
+];

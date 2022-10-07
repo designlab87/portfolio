@@ -12,6 +12,7 @@ import { GoMarkGithub } from "react-icons/go";
 import { IconContext } from "react-icons";
 
 import * as Constant from './Constants/Constants';
+import Chart from './Constants/Chart';
 
 const App = () => {
 
@@ -87,14 +88,6 @@ const App = () => {
         </Col>
       </Row>
       <Row>
-        <Col xl={4}>
-        </Col>
-        <Col xl={4}>
-        </Col>
-        <Col xl={4}>
-        </Col>
-      </Row>
-      <Row>
         <Col xl={12}><Code code={Constant.codeBlock4}></Code></Col>
         <Col xl={12}><Code code={Constant.codeBlock5}></Code></Col>
       </Row>
@@ -103,6 +96,11 @@ const App = () => {
       </Row>
       <Row>
         <Col xl={12}><Code code={Constant.codeBlock6}></Code></Col>
+      </Row>
+      <Row>
+        <Col xl={12}>
+          <Chart />
+        </Col>
       </Row>
       <Row>
         <Col xl={12}></Col>
