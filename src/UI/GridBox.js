@@ -13,6 +13,7 @@ const GridBox = (props) => {
     }
     const element = document.getElementById(id);
     element.classList.add('active');
+    document.getElementById(id).scrollIntoView();
   };
 
   return (

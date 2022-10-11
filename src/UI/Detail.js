@@ -11,8 +11,9 @@ const detailHideHandler = (id) => {
   for (const el of elements){
       el.classList.add('active');
   }
-  const element = document.getElementById(id);
+  const element = document.getElementById(id+'_detail_col');
   element.classList.remove('active');
+  document.getElementById(id+'_grid_card').scrollIntoView();
 };
 
 const Detail = (props) => {
@@ -27,7 +28,7 @@ const Detail = (props) => {
               <Card.Subtitle className="mb-2 text-muted">{props.subtitle}</Card.Subtitle>
             </Col>
             <Col xl={6}>
-              <Card.Link className="detailLink" onClick={()=>detailHideHandler(props.id+'_detail_col')}>Back To Projects</Card.Link>
+              <Card.Link className="detailLink" onClick={()=>detailHideHandler(props.id)}>Back To Projects</Card.Link>
             </Col>
           </Row>
           <Row>
