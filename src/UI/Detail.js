@@ -33,15 +33,15 @@ const Detail = (props) => {
           </Row>
           <Row>
             <Col xl={6}>
-              {props.fullImgs.map((img, i)=>{
-                return <Image fluid className="detailImg" src={img} alt="img" key={i+'_detail_img'} />
-              })}
-            </Col>
-            <Col xl={6}>
               {props.fullbody.map((text, i)=>{
                 return <div className="detailText" key={i+'_detail_text'} dangerouslySetInnerHTML={{__html: text}} />
               })}
               <Card.Link className="detailLink" target="_blank" rel="noreferrer" href={props.link.link}>{props.link.text}</Card.Link>
+            </Col>
+            <Col xl={6}>
+              {props.fullImgs.map((img, i)=>{
+                return <Image fluid className="detailImg" src={img} alt="img" key={i+'_detail_img'} />
+              })}
             </Col>
           </Row>
         </Card.Body>
