@@ -1,4 +1,4 @@
-import { Fragment } from 'react';
+import React, { Fragment, useState, useEffect } from 'react';
 
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -9,12 +9,46 @@ import Code from './UI/Code';
 import Header from './UI/Header';
 import './App.css';
 import { GoMarkGithub } from "react-icons/go";
+import { IoIosMoon, IoIosSunny } from "react-icons/io";
 import { IconContext } from "react-icons";
 
 import * as Constant from './Constants/Constants';
 import Chart from './Constants/Chart';
 
 const App = () => {
+
+  const [theme, setTheme] = useState(
+    localStorage.getItem('theme') || 'dark'
+  );
+
+  const toggleTheme = () => {
+    if (theme === 'light') {
+      setTheme('dark');
+    } else {
+      setTheme('light');
+    }
+  };
+
+  const toggleThemeName = () => {
+    if (theme === 'light') {
+      return 'dark';
+    } else {
+      return 'light';
+    }
+  };
+
+  const toggleThemeIcon = () => {
+    if (theme === 'light') {
+      return <IoIosMoon />;
+    } else {
+      return <IoIosSunny />;
+    }
+  };
+
+  useEffect(() => {
+    localStorage.setItem('theme', theme);
+    document.body.className = theme;
+  }, [theme]);
 
   const gridList = Constant.gridData.map((item, i) => (
     <Fragment key={i+'_detail_col'}>
@@ -55,11 +89,20 @@ const App = () => {
           <Header headLink={Constant.headLink}/>
         </Col>
         <Col xl={4}>
-          <IconContext.Provider value={{ className: "gitIcon", size: "2rem" }}>
-            <div><a target="_blank" rel="noreferrer" href={Constant.gitLink}>
-            <GoMarkGithub />
-            </a></div>
-          </IconContext.Provider>
+          <Row>
+            <Col xl={12}>
+              <IconContext.Provider value={{ className: "gitIcon", size: "2rem" }}>
+                <div>
+                  <a target="_blank" rel="noreferrer" href={Constant.gitLink}>
+                    <GoMarkGithub />
+                  </a>
+                </div>
+              </IconContext.Provider>
+            </Col>
+            <Col xl={12}>
+              <button className="link-button" onClick={toggleTheme}><IconContext.Provider value={{ className: "themeIcon", size: "1.7rem" }}>{toggleThemeIcon()}</IconContext.Provider> {toggleThemeName()} theme</button>
+            </Col>
+          </Row>
         </Col>
       </Row>
       <Row>

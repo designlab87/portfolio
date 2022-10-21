@@ -24,6 +24,10 @@
 .resumeLink .card-link {
   text-align: center;
 }
+.card-link:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
 
 .contactInfo {
   margin-top:14px;
@@ -46,8 +50,39 @@
   margin-bottom:20px;
 }
 
+.link-button {
+  text-align:center;
+  display:flex;
+  margin:0 auto;
+  background: none!important;
+  border: none;
+  padding: 0 0 20px 0!important;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 16px;
+  color:var(--lightest-color);
+  text-decoration: none;
+  cursor: pointer;
+}
+.link-button:hover {
+  color:var(--bs-link-hover-color);
+}
+
+.themeIcon {
+  padding-right:6px;
+}
 
 @media only screen and (min-width: 1200px) {
+  .link-button {
+    float: right;
+    background: none!important;
+    border: none;
+    padding: 0!important;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 16px;
+    color:var(--lightest-color);
+    text-decoration: none;
+    cursor: pointer;
+  }
   .gitIcon {
     margin-top:14px;
     float:right;
